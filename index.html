@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <style>
+      #input {
+        position: relative;
+        max-height: 100px;
+      }
+
+      #input span {
+        font-size: 24px;
+      }
+
+      .card-body {
+        padding-top: 0;
+      }
+
+      .correct {
+        color: green;
+      }
+
+      .incorrect {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="card">
+            <div class="card-body d-block overflow-hidden" id="box">
+              <div id="input"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-4">
+          <div class="input-group" style="max-width: 500px">
+            <input
+              type="text"
+              name="test"
+              class="form-control"
+              id="kata"
+              placeholder="Type here"
+              autocomplete="off"
+              autofocus
+            />
+            <span class="input-group-text" id="waktu">60</span>
+            <a class="btn btn-primary" href="">Restart</a>
+          </div>
+        </div>
+      </div>
+      <p id="total"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
